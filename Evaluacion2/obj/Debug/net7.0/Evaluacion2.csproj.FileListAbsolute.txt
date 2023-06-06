@@ -1,0 +1,15 @@
+C:\Users\Ariana\OneDrive\Escritorio\Ari\Image Campus\Evaluaciones\Evaluacion2\Evaluacion2\bin\Debug\net7.0\Evaluacion2.exe
+C:\Users\Ariana\OneDrive\Escritorio\Ari\Image Campus\Evaluaciones\Evaluacion2\Evaluacion2\bin\Debug\net7.0\Evaluacion2.deps.json
+C:\Users\Ariana\OneDrive\Escritorio\Ari\Image Campus\Evaluaciones\Evaluacion2\Evaluacion2\bin\Debug\net7.0\Evaluacion2.runtimeconfig.json
+C:\Users\Ariana\OneDrive\Escritorio\Ari\Image Campus\Evaluaciones\Evaluacion2\Evaluacion2\bin\Debug\net7.0\Evaluacion2.dll
+C:\Users\Ariana\OneDrive\Escritorio\Ari\Image Campus\Evaluaciones\Evaluacion2\Evaluacion2\bin\Debug\net7.0\Evaluacion2.pdb
+C:\Users\Ariana\OneDrive\Escritorio\Ari\Image Campus\Evaluaciones\Evaluacion2\Evaluacion2\obj\Debug\net7.0\Evaluacion2.csproj.AssemblyReference.cache
+C:\Users\Ariana\OneDrive\Escritorio\Ari\Image Campus\Evaluaciones\Evaluacion2\Evaluacion2\obj\Debug\net7.0\Evaluacion2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ariana\OneDrive\Escritorio\Ari\Image Campus\Evaluaciones\Evaluacion2\Evaluacion2\obj\Debug\net7.0\Evaluacion2.AssemblyInfoInputs.cache
+C:\Users\Ariana\OneDrive\Escritorio\Ari\Image Campus\Evaluaciones\Evaluacion2\Evaluacion2\obj\Debug\net7.0\Evaluacion2.AssemblyInfo.cs
+C:\Users\Ariana\OneDrive\Escritorio\Ari\Image Campus\Evaluaciones\Evaluacion2\Evaluacion2\obj\Debug\net7.0\Evaluacion2.csproj.CoreCompileInputs.cache
+C:\Users\Ariana\OneDrive\Escritorio\Ari\Image Campus\Evaluaciones\Evaluacion2\Evaluacion2\obj\Debug\net7.0\Evaluacion2.dll
+C:\Users\Ariana\OneDrive\Escritorio\Ari\Image Campus\Evaluaciones\Evaluacion2\Evaluacion2\obj\Debug\net7.0\refint\Evaluacion2.dll
+C:\Users\Ariana\OneDrive\Escritorio\Ari\Image Campus\Evaluaciones\Evaluacion2\Evaluacion2\obj\Debug\net7.0\Evaluacion2.pdb
+C:\Users\Ariana\OneDrive\Escritorio\Ari\Image Campus\Evaluaciones\Evaluacion2\Evaluacion2\obj\Debug\net7.0\Evaluacion2.genruntimeconfig.cache
+C:\Users\Ariana\OneDrive\Escritorio\Ari\Image Campus\Evaluaciones\Evaluacion2\Evaluacion2\obj\Debug\net7.0\ref\Evaluacion2.dll
