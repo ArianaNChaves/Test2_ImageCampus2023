@@ -12,21 +12,19 @@ public class Spear : Weapon
  { 
    float attackDamage = 0;
    float totalDamage = 0;
+   int critialRate = 80;
+   int hitChance = 40;
+   bool hitAgain = true;
    
    
    if (attackType == AttackType.Slashing)
    {
+       do
+       {
+           attackDamage += attack;
+
+       } while (hitAgain);
        
-       if (isCrit)
-       {
-           Console.WriteLine("Critical Attack");
-           attackDamage = attack + attack * 0.8f;
-           totalDamage = attackDamage + (attack / 2) * 2;
-       }
-       else
-       {
-           attackDamage = attack + attack * 0.8f;
-       }
    }
    
 

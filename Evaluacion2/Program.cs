@@ -23,7 +23,7 @@ class Program
         //todo Cambiar la variable show por random.Next..
         int show = random.Next(100);
         Console.WriteLine("random number: " + show);
-        return show <= chance ? true : false;
+        return show <= chance;
     }
     
 }
