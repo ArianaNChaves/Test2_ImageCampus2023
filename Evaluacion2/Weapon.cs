@@ -4,6 +4,7 @@ public abstract class Weapon
 {
     protected string name;
     protected float attack;
+    protected float criticalDamage;
 
     public enum  AttackType //todo pasar a ingles xd
     {
@@ -16,6 +17,7 @@ public abstract class Weapon
     {
         this.name = name;
         this.attack = attack;
+        this.criticalDamage = 0;
     }
 
     public abstract float GetAttackDamage(AttackType attackType, bool isCrit);
@@ -31,4 +33,5 @@ public abstract class Weapon
         get => attack;
         set => attack = value;
     }
+    
 }

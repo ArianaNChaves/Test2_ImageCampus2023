@@ -1,4 +1,5 @@
 ﻿using static Evaluacion2.Utils;
+using static Evaluacion2.WarriorCreator;
 namespace Evaluacion2;
 /*
  * Arreglar main
@@ -9,10 +10,12 @@ class Program
     
     static void Main()
     {
-        
-        Spear spear = new Spear("Bridge", 1);
-        Console.WriteLine(spear.GetAttackDamage(Weapon.AttackType.Piercing,  IsCritic(80)));
-        
+      Warrior player1 = CreateWarrior();
+      Warrior player2 = CreateWarrior();
+      Game game = new Game(player1, player2);
+      game.Play();
+
+     
     }
 
 }

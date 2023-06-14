@@ -1,8 +1,10 @@
 namespace Evaluacion2;
 public class Spear : Weapon
 {
+    private const float CriticalDamage = 1.5f;
  public Spear(string name, float attack) : base(name, attack)
  {
+     criticalDamage = CriticalDamage;
  }
  public override float GetAttackDamage(AttackType attackType, bool isCrit)
  { 
@@ -20,11 +22,9 @@ public class Spear : Weapon
            attackDamage += attack;
        }
        
-       while (random.Next(100) <= hitAgain && limit <= 10)
+       while (random.Next(1,101) <= hitAgain && limit <= 10)
        {
-
            attackDamage += attack;
-
            limit++;
        }
    }
@@ -38,16 +38,13 @@ public class Spear : Weapon
            {
                attackDamage += attack * 2;
                hitChance -= 20;
-               Console.WriteLine("Es critico?: " + isCrit + " | Hit Chance: " + hitChance);
            }
            else
            {
                attackDamage += attack;
                hitChance += 15;
-               Console.WriteLine("Es critico?: " + isCrit + " | Hit Chance: " + hitChance);
-
            }
-           if (random.Next(100) <= hitChance)
+           if (random.Next(1,101) <= hitChance)
            {
                isCrit = true;
            }

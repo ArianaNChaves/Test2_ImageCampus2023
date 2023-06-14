@@ -2,12 +2,29 @@
 
 public class Utils
 {
-    public static bool IsCritic(int chance)
+    public static bool IsCritic(float chance, Warrior warrior)
     {
         Random random = new Random();
-        //todo Cambiar la variable show por random.Next..
-        int show = random.Next(100);
-        Console.WriteLine("random number: " + show);
-        return show <= chance;
+        Armor armor = warrior.Armor;
+
+        switch (armor)
+        {
+            case LightArmor:
+                chance *= 1.5f;
+                break;
+            case MediumArmor:
+                chance *= 1.0f;
+                break;
+            case HeavyArmor:
+                chance *= 0.5f;
+                break;
+            default:
+                Console.WriteLine("Error");
+                break;
+        }
+        return random.Next(1,101) <= chance;
     }
+
+    
+    
 }

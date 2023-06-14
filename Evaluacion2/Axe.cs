@@ -2,10 +2,11 @@
 
 public class Axe : Weapon
 {
+    private const float CriticalDamage = 1.5f;
     public Axe(string name, float attack) : base(name, attack)
     {
+        criticalDamage = CriticalDamage;
     }
-
     public override float GetAttackDamage(AttackType attackType, bool isCrit)
     {
         float attackDamage = 0;
@@ -13,7 +14,7 @@ public class Axe : Weapon
         {
             if (isCrit)
             {
-                attackDamage += (attack + attack / 2) * 3;
+                attackDamage += (attack + attack / 2) * criticalDamage;
 
             }
             else
@@ -26,7 +27,7 @@ public class Axe : Weapon
         {
             if (isCrit)
             {
-                attackDamage += attack * 2 + attack * 2;
+                attackDamage += attack * criticalDamage + attack * criticalDamage;
             }
             else
             {

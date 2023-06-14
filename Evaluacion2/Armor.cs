@@ -1,11 +1,11 @@
 ﻿namespace Evaluacion2;
 
-public class Armor
+public abstract class Armor
 {
-    private string name;
-    private float defense;
-    private float weight;
-
+    protected string name;
+    protected float defense;
+    protected float weight;
+    
     public Armor(string name, float defense, float weight)
     {
         this.name = name;
@@ -31,18 +31,5 @@ public class Armor
         set => weight = value;
     }
 
-    public float MitigateDamage(float damage)
-    {
-        float mitigateDamage = defense + weight * 0.2f - damage;
-        if (mitigateDamage >= 0)
-        {
-            mitigateDamage = 0;
-        }
-        else
-        {
-            mitigateDamage = Math.Abs(mitigateDamage);
-        }
-
-        return mitigateDamage;
-    }
+    public abstract float MitigateDamage(float damage);
 }
