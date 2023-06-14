@@ -6,14 +6,12 @@ public class Game
     private int rounds;
     private Warrior player1;
     private Warrior player2;
-    
     public Game(Warrior player1, Warrior player2)
     {
         this.player1 = player1;
         this.player2 = player2;
         rounds = 0;
     }
-
     public void Play()
     {//guardar las estadisticas de los players para poder resetearlas
         while (player1.IsAlive() && player2.IsAlive())
@@ -47,9 +45,7 @@ public class Game
                     PlayRound(player1, player2,player1Option);
                     break;
             }
-
         }
-
         if (player1.IsAlive())
         {
             Console.WriteLine("Gano " + player1.Name);
@@ -59,7 +55,6 @@ public class Game
             Console.WriteLine("Gano " + player2.Name); 
         }
     }
-    
     private void PlayRound(Warrior first, Warrior second, int option)
     {
         bool isCritic1 = IsCritic(50, first);

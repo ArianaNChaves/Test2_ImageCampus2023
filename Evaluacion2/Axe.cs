@@ -31,7 +31,7 @@ public class Axe : Weapon
             }
             else
             {
-                attackDamage += attack * 2 + attack;
+                attackDamage += attack * criticalDamage + attack;
             }
         }
 

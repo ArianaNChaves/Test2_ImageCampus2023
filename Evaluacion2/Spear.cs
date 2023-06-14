@@ -32,8 +32,6 @@ public class Spear : Weapon
    {
        for (int i = 0; i < 3; i++)
        {
-           Console.WriteLine("-------- " + i + " ---------");
-           Console.WriteLine("HitChance: " + hitChance);
            if (isCrit)
            {
                attackDamage += attack * 2;

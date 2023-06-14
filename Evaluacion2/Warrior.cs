@@ -51,12 +51,10 @@ public class Warrior
     {
         this.armor = armor;
     }
-
     public string GetName()
     {
         return name;
     }
-
     public float ReceiveDamage(float damage)
     {
         float trueDamage = armor.MitigateDamage(damage);
@@ -68,13 +66,11 @@ public class Warrior
     {
         return warrior.ReceiveDamage(weapon.GetAttackDamage(attackType, isCrit));
         
-    } //todo Ver bien esto del AttackType
-
+    }
     public float GetCurrentHealth()
     {
         return currentHealth;
     }
-
     public bool IsAlive()
     {
         return currentHealth > 0;
