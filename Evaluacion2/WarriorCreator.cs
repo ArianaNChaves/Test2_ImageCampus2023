@@ -54,9 +54,10 @@ public class WarriorCreator
                     break;
             }
 
-            warrior = new Warrior(name, 500);
+            warrior = new Warrior(name, 1000);
             warrior.SetWeapon(weapon);
             warrior.SetArmor(armor);
+            Console.Clear();
 
             return warrior;
     }

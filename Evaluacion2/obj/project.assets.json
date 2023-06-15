@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ariana\\OneDrive\\Escritorio\\Ari\\Image Campus\\Evaluaciones\\Evaluacion2\\ImageCampus-2ndProject\\Evaluacion2\\Evaluacion2.csproj",
+      "projectUniqueName": "C:\\Users\\Ariana\\OneDrive\\Escritorio\\ImageCampus-2ndProject-main\\Evaluacion2\\Evaluacion2.csproj",
       "projectName": "Evaluacion2",
-      "projectPath": "C:\\Users\\Ariana\\OneDrive\\Escritorio\\Ari\\Image Campus\\Evaluaciones\\Evaluacion2\\ImageCampus-2ndProject\\Evaluacion2\\Evaluacion2.csproj",
+      "projectPath": "C:\\Users\\Ariana\\OneDrive\\Escritorio\\ImageCampus-2ndProject-main\\Evaluacion2\\Evaluacion2.csproj",
       "packagesPath": "C:\\Users\\Ariana\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Ariana\\OneDrive\\Escritorio\\Ari\\Image Campus\\Evaluaciones\\Evaluacion2\\ImageCampus-2ndProject\\Evaluacion2\\obj\\",
+      "outputPath": "C:\\Users\\Ariana\\OneDrive\\Escritorio\\ImageCampus-2ndProject-main\\Evaluacion2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Ariana\\AppData\\Roaming\\NuGet\\NuGet.Config",

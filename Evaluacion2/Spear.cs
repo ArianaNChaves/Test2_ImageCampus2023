@@ -6,12 +6,18 @@ public class Spear : Weapon
  {
      criticalDamage = CriticalDamage;
  }
- public override float GetAttackDamage(AttackType attackType, bool isCrit)
+ public override float GetAttackDamage(AttackType attackType, bool isCrit, int dodgeChance)
  { 
    float attackDamage = 0;
    int hitAgain = 50, limit = 0, hitChance = 80;
    
    Random random = new Random();
+   
+   // Check if attack will hit
+   if (random.Next(1, 101) <= dodgeChance)
+   {
+       return 0;
+   }
    
    if (attackType == AttackType.Slashing)
    {
@@ -27,6 +33,7 @@ public class Spear : Weapon
            attackDamage += attack;
            limit++;
        }
+       Console.WriteLine("The spear hit " + (limit + plusAttack) + " times!");
    }
    if (attackType == AttackType.Piercing)
    {
@@ -52,6 +59,7 @@ public class Spear : Weapon
            }
        }
    }
+
    return attackDamage;
  }
 }

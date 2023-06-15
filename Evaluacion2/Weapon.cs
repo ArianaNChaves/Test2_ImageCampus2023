@@ -17,7 +17,7 @@ public abstract class Weapon
         this.attack = attack;
         this.criticalDamage = 0;
     }
-    public abstract float GetAttackDamage(AttackType attackType, bool isCrit);
+    public abstract float GetAttackDamage(AttackType attackType, bool isCrit, int dodgeChance);
     public string Name
     {
         get => name;

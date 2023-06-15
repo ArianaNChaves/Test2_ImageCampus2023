@@ -1,14 +1,22 @@
 namespace Evaluacion2;
 public class Sword : Weapon
 {
-    private const float CriticalDamage = 1.5f;
+    private const float CriticalDamage = 2.5f;
     public Sword(string name, float attack) : base(name, attack)
     {
         criticalDamage = CriticalDamage;
     }
-    public override float GetAttackDamage(AttackType attackType, bool isCrit)
+    public override float GetAttackDamage(AttackType attackType, bool isCrit, int dodgeChance)
     {
+        Random random = new Random();
+
         float attackDamage = 0;
+        
+        // Check if attack will hit
+        if (random.Next(1, 101) <= dodgeChance)
+        {
+            return 0;
+        }
         if (attackType == AttackType.Slashing)
         {
             if (isCrit)
@@ -24,7 +32,7 @@ public class Sword : Weapon
         {
             if (isCrit)
             {
-                attackDamage = attack * criticalDamage;
+                attackDamage = 3 * (attack * criticalDamage);
             }
             else
             {

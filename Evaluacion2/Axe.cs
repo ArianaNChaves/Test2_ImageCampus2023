@@ -7,9 +7,17 @@ public class Axe : Weapon
     {
         criticalDamage = CriticalDamage;
     }
-    public override float GetAttackDamage(AttackType attackType, bool isCrit)
+    public override float GetAttackDamage(AttackType attackType, bool isCrit, int dodgeChance)
     {
+        Random random = new Random();
+
         float attackDamage = 0;
+        
+        // Check if attack will hit
+        if (random.Next(1, 101) <= dodgeChance)
+        {
+            return 0;
+        }
         if (attackType == AttackType.Slashing)
         {
             if (isCrit)
@@ -31,7 +39,7 @@ public class Axe : Weapon
             }
             else
             {
-                attackDamage += attack * criticalDamage + attack;
+                attackDamage += attack + attack / 4;
             }
         }
 

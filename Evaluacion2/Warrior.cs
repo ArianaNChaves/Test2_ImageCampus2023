@@ -62,9 +62,9 @@ public class Warrior
         return trueDamage;
     }
 
-    public float Attack(Warrior warrior, AttackType attackType, bool isCrit)
+    public float Attack(Warrior warrior, AttackType attackType, bool isCrit, int dodgeChance)
     {
-        return warrior.ReceiveDamage(weapon.GetAttackDamage(attackType, isCrit));
+        return warrior.ReceiveDamage(weapon.GetAttackDamage(attackType, isCrit, dodgeChance));
         
     }
     public float GetCurrentHealth()
@@ -74,5 +74,15 @@ public class Warrior
     public bool IsAlive()
     {
         return currentHealth > 0;
+    }
+    
+    public void RecoverMissingHealth(float percentage)
+    {
+        float missingHealth = maxHealth - currentHealth;
+        int recoveryAmount = (int)(missingHealth * percentage);
+        currentHealth += recoveryAmount;
+
+        if (currentHealth > maxHealth)
+            currentHealth = maxHealth;
     }
 }
